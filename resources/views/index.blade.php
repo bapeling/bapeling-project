@@ -111,7 +111,7 @@
                     <div class="pic"><img src="assets/img/dokumentasi/d-4.jpeg" class="img-fluid" alt="">
                     </div>
                     <div class="member-info">
-                        <h4>Wawancara di DLHK</h4>
+                        <h4>Wawancara di DKLH</h4>
                     </div>
                 </div>
             </div>
@@ -121,7 +121,7 @@
                     <div class="pic"><img src="assets/img/dokumentasi/d-5.jpeg" class="img-fluid" alt="">
                     </div>
                     <div class="member-info">
-                        <h4>Wawancara di DLHK</h4>
+                        <h4>Wawancara di DKLH</h4>
                     </div>
                 </div>
             </div>
