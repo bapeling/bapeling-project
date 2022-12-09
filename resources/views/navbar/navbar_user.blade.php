@@ -11,6 +11,7 @@
 
     <!-- Favicons -->
     <link href="assets/img/favicon1.png" rel="icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
@@ -44,23 +45,54 @@
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link scrollto {{ $title === 'Home' ? 'active' : ' ' }}" href="/">Beranda</a>
+                    <li><a class="nav-link scrollto {{ $title === 'Home_user' ? 'active' : ' ' }}" href="/user">Beranda</a>
                     </li>
                     </li>
-                    <li><a class="nav-link scrollto {{ $title === 'About' ? 'active' : ' ' }}" href="/about">Tentang</a></li>
+                    <li><a class="nav-link scrollto {{ $title === 'About' ? 'active' : ' ' }}" href="/about_user">Tentang</a></li>
 
 
-                    <!-- <li class="dropdown"><a href="#"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a href="#"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a class="nav-link scrollto {{ $title === 'Lokasi' ? 'active' : ' ' }}" href="/location">Lokasi TPS</a></li>
-                            <li><a class="nav-link scrollto {{ $title === 'Merketplace' ? 'active' : ' ' }}" href="/bank">Marketplace</a></li>
-                        </ul> -->
+                            <li><a class="nav-link scrollto {{ $title === 'Lokasi' ? 'active' : ' ' }}" href="/page-location-user">Lokasi TPS</a></li>
+                            <li><a class="nav-link scrollto {{ $title === 'Merketplace' ? 'active' : ' ' }}" href="/page-market-user">Marketplace</a></li>
+                        </ul>
 
-                    <li><a class="nav-link scrollto {{ $title === 'Kontak' ? 'active' : ' ' }}" href="/contact">Kontak</a></li>
-                    <li><a class="nav-link scrollto {{ $title === 'Login' ? 'active' : ' ' }}" href="/login">Login</a></li>
+                    <li><a class="nav-link scrollto {{ $title === 'Kontak' ? 'active' : ' ' }}" href="/contact-user">Kontak</a></li>
+                    <li><a class="nav-link scrollto" href="#"></a></li>
                 </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
+                <img src="assets/img/person-fill.svg" class="user-pic" onclick="toggleMenu()">
             </nav><!-- .navbar -->
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="assets/img/person-fill.svg">
+                        <h3>user</h3>
+                    </div>
+                    <hr>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="assets/img/pencil-fill.svg">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="assets/img/gear-fill.svg">
+                        <p>Settings</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="assets/img/info-circle-fill.svg">
+                        <p>Help</p>
+                        <span>></span>
+                    </a>
+                    <a href="/" class="sub-menu-link">
+                        <img src="assets/img/box-arrow-right.svg">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+
+                </div>
+            </div>
         </div>
     </header><!-- End Header -->
 
@@ -92,22 +124,22 @@
                     <div class="col-lg-2 col-md-6 footer-links">
                         <h4>Semua Link</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="/">Beranda</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="/about">Tentang</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="/location">Lokasi TPS</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="/bank">Bank Sampah</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="/login/login">Login</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/user">Beranda</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/about_user">Tentang</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/page-location-user">Lokasi TPS</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/page-market-user">Bank Sampah</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/contact-user">Contact</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-3 col-md-6 footer-links">
                         <h4>Layanan</h4>
                         <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="/about">Edukasi Pemilahan Sampah</a>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/about_user">Edukasi Pemilahan Sampah</a>
                             </li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="/location">Maps TPS terdekat</a>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/page-location-user">Maps TPS terdekat</a>
                             </li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="/bank">Marketplace</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="/page-market-user">Marketplace</a></li>
                         </ul>
                     </div>
 
@@ -139,6 +171,13 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+        let subMenu = document.getElementById("subMenu");
+
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
 
 </body>
 

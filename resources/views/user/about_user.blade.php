@@ -1,4 +1,4 @@
-@extends('navbar.navbar')
+@extends('navbar.navbar_user')
 @section('context')
 <!-- ======= About Section ======= -->
 <section id="about" class="about">

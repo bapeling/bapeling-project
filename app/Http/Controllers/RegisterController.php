@@ -21,12 +21,13 @@ class RegisterController extends Controller
     {
         //$validatedData = $request->all();
         $validatedData = $request->validate([
-            'username' =>'required',
+            'username' => 'required',
             'name' => 'required',
             'email' => 'required|email',
-            'level'    =>  ['required',Rule::in(['user'])],
+            'alamat' => 'required',
+            'level'    =>  ['required', Rule::in(['user'])],
             'password' => 'required',
-            
+
         ]);
         $validatedData['password'] = Hash::make($validatedData['password']);
 

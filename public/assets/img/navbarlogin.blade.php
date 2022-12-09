@@ -11,8 +11,11 @@
 
     <!-- Favicons -->
     <link href="assets/img/favicon1.png" rel="icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
 
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -47,21 +50,57 @@
                     <li><a class="nav-link scrollto {{ $title === 'Home' ? 'active' : ' ' }}" href="/">Beranda</a>
                     </li>
                     </li>
-                    <li><a class="nav-link scrollto {{ $title === 'About' ? 'active' : ' ' }}" href="/about">Tentang</a></li>
+                    <li><a class="nav-link scrollto {{ $title === 'About' ? 'active' : ' ' }}"
+                            href="/about">Tentang</a></li>
 
 
-                    <!-- <li class="dropdown"><a href="#"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
+                    <li class="dropdown"><a href="#"><span>Layanan</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a class="nav-link scrollto {{ $title === 'Lokasi' ? 'active' : ' ' }}" href="/location">Lokasi TPS</a></li>
-                            <li><a class="nav-link scrollto {{ $title === 'Merketplace' ? 'active' : ' ' }}" href="/bank">Marketplace</a></li>
-                        </ul> -->
+                            <li><a class="nav-link scrollto {{ $title === 'Lokasi' ? 'active' : ' ' }}"
+                                    href="/location">Lokasi TPS</a></li>
+                            <li><a class="nav-link scrollto {{ $title === 'Merketplace' ? 'active' : ' ' }}"
+                                    href="/bank">Marketplace</a></li>
+                        </ul>
 
-                    <li><a class="nav-link scrollto {{ $title === 'Kontak' ? 'active' : ' ' }}" href="/contact">Kontak</a></li>
-                    <li><a class="nav-link scrollto {{ $title === 'Login' ? 'active' : ' ' }}" href="/login">Login</a></li>
+                    <li><a class="nav-link scrollto {{ $title === 'Kontak' ? 'active' : ' ' }}"
+                            href="/contact">Kontak</a></li>
+                    <li><a class="nav-link scrollto" href="#"></a></li>
                 </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
+                <img src="assets/img/person-fill.svg" class="user-pic" onclick="toggleMenu()">
             </nav><!-- .navbar -->
+            <div class="sub-menu-wrap" id="subMenu">
+                <div class="sub-menu">
+                    <div class="user-info">
+                        <img src="assets/img/person-fill.svg">
+                        <h3>user</h3>
+                    </div>
+                    <hr>
+
+                    <a href="#" class="sub-menu-link">
+                        <img src="assets/img/pencil-fill.svg">
+                        <p>Edit Profile</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="assets/img/gear-fill.svg">
+                        <p>Settings</p>
+                        <span>></span>
+                    </a>
+                    <a href="#" class="sub-menu-link">
+                        <img src="assets/img/info-circle-fill.svg">
+                        <p>Help</p>
+                        <span>></span>
+                    </a>
+                    <a href="{{ route('logout') }}" class="sub-menu-link">
+                        <img src="assets/img/box-arrow-right.svg">
+                        <p>Logout</p>
+                        <span>></span>
+                    </a>
+
+                </div>
+            </div>
         </div>
+
     </header><!-- End Header -->
 
     <!-- ======= Footer ======= -->
@@ -127,7 +166,8 @@
         </div>
     </footer><!-- End Footer -->
 
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/aos/aos.js"></script>
@@ -139,7 +179,13 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+        let subMenu = document.getElementById("subMenu");
 
+        function toggleMenu() {
+            subMenu.classList.toggle("open-menu");
+        }
+    </script>
 </body>
 
 </html>

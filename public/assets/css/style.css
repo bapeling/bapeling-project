@@ -170,6 +170,92 @@ h6 {
   transition: 0.3s;
 }
 
+/* User */
+
+.user-pic {
+  width: 30px;
+  padding: 5px;
+  border-radius: 50%;
+  background: #EEEEEE;
+  cursor: pointer;
+}
+
+.sub-menu-wrap {
+  position: absolute;
+  top: 120%;
+  right: 7%;
+  width: 320px;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+  max-height: 400px;
+}
+
+.sub-menu {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info img {
+  width: 40px;
+  margin-right: 20px
+}
+
+.user-info h3 {
+  color: black;
+  font-size: 20px;
+}
+
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+  margin: 12px 0;
+}
+
+.sub-menu-link p {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.sub-menu-link img {
+  width: 40px;
+  margin-right: 20px;
+  margin-left: 5px;
+  padding: 8px;
+  background-color: #EEEEEE;
+  border-radius: 50%;
+}
+
+.sub-menu-link span {
+  font-size: 22px;
+  transition: transform 0.5s;
+}
+
+.sub-menu-link:hover span {
+  transform: translateX(5px);
+  color: #1ad477;
+}
+
+.sub-menu-link:hover p {
+  font-weight: 600;
+  color: #1ad477;
+}
+
+.navbar .dropdown ul a i {
+  font-size: 12px;
+}
+
 .navbar a i,
 .navbar a:focus i {
   font-size: 12px;
@@ -667,6 +753,19 @@ section {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+
+/* gambar atas */
+
+.gambar1 {
+  float: left;
+  margin: 5px;
+}
+
+.gambar2 {
+  float: right;
+  margin: 5px;
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
