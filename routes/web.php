@@ -20,6 +20,18 @@ Route::get('/', function () {
         "title" => "Home"
     ]);
 });
+
+Route::get('/about', function () {
+    return view('about', [
+        "title" => "Tentang"
+    ]);
+});
+
+Route::get('/contact', function () {
+    return view('contact', [
+        "title" => "Kontak"
+    ]);
+});
 //Register
 Route::get('/register', [RegisterController::class, 'register']);
 Route::post('/register', [RegisterController::class, 'store']);
